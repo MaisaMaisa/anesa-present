@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Happy birthday to my best sis</title>
+</head>
+<body style="background-color: rgb(213, 252, 243);">
+    <span class="heart">♡</span>
+    <span class="heart">♡</span>
+    <span class="heart">♡</span>
+    &nbsp;<p>I love you Anesa !!</p>&nbsp;
+    <p>Sretan ti rodjendan, sunce moje drago :)</p>
+    <span class="heart">♡</span>
+    <span class="heart">♡</span>
+    <span class="heart">♡</span>
+</body>
+</html>
+
+<script>
+$(document).ready(function() {
+    $('#typing-text').on('animationend', function() {
+        $('#flower, #typing-text').delay(500).fadeOut('slow', function() {
+            $('#center-img').attr('src', '/images/IMG_1475_two.jpg').fadeIn('slow', function() {
+                $(this).delay(500).fadeOut(function() {
+                    $(this).attr('src', '/images/IMG_1475_three.jpg').fadeIn('slow');
+                });
+            });
+        });
+    });
+});
+</script>

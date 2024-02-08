@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Happy birthday to my best sis</title>
+</head>
+<body style="background-color: rgb(213, 252, 243);">
+    <img id="flower" src="/images/c714f65a7853ccace26b3c943ca337c3-4100327515.png" alt="Flower Image">
+    <img id="center-img" style="width: 40%;" src="/images/IMG_1475.jpg">
+    <div id="typing-text">'gledamo djecu kako rastu' ;);)</div>
+    <a class="next-link" href="/final.html">next</a>
+</body>
+</html>
+
+<script>
+$(document).ready(function() {
+    $('#typing-text').on('animationend', function() {
+        $('#flower, #typing-text').delay(500).fadeOut('slow', function() {
+            $('#center-img').attr('src', '/images/IMG_1475_two.jpg').fadeIn('slow', function() {
+                $(this).delay(500).fadeOut(function() {
+                    $(this).attr('src', '/images/IMG_1475_three.jpg').fadeIn('slow');
+                        $('.next-link').fadeIn('12000');
+                });
+            });
+        });
+    });
+});
+</script>
